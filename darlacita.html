@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para: Darla</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#fff7f0,#ffe6cc);
+    overflow-x:hidden;
+    color:#5b3412;
+}
+
+#entrada{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(135deg,#ffdcc2,#ffffff);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    color:white;
+    text-align:center;
+}
+
+#entrada h1{
+    margin-bottom:20px;
+}
+
+.coracao-entrada{
+    font-size:120px;
+    cursor:pointer;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.15)}
+}
+
+.hearts{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.heart-fall{
+    position:absolute;
+    top:-10vh;
+    color:#ff8c32;
+    animation:fall linear infinite;
+    opacity:.6;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(120vh);
+    }
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+}
+
+h1{
+    color:#ff8c32;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:1.15rem;
+    line-height:1.8;
+    margin:15px 0;
+}
+
+.pergunta{
+    font-size:1.8rem;
+    font-weight:700;
+    margin-top:30px;
+}
+
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:35px;
+    align-items:center;
+}
+
+#sim{
+    background:linear-gradient(135deg,#ff8c32,#ffb347);
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:999px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(255,140,50,.35);
+    transition:.3s;
+}
+
+#sim:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+#nao{
+    background:white;
+    color:#ff8c32;
+    border:2px solid #ff8c32;
+    padding:15px 40px;
+    border-radius:999px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#nao:hover{
+    box-shadow:0 10px 25px rgba(255,140,50,.2);
+}
+
+#resposta{
+    display:none;
+    margin-top:25px;
+    font-size:1.3rem;
+    color:#ff7b00;
+    font-weight:600;
+}
+
+.video-section{
+    margin-top:80px;
+}
+
+iframe{
+    width:100%;
+    max-width:900px;
+    height:500px;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+#playerHidden{
+    position:absolute;
+    left:-9999px;
+}
+</style>
+</head>
+<body>
+
+<div id="entrada">
+    <h1>Clique no coração</h1>
+    <div class="coracao-entrada" onclick="entrar()">🧡</div>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<div id="playerHidden"></div>
+
+<div class="container">
+    <div class="card">
+        <h1>Darla Araújo</h1>
+
+        <p>Oi, 🧡</p>
+
+        <p>
+            Eu queria te escrever isso porque, mais do que dizer que gosto de você,
+            eu quero que você saiba quais são as minhas intenções com tudo isso.
+        </p>
+
+        <p>
+            Você se tornou uma das pessoas mais importantes da minha vida.
+            Não só porque eu gosto do seu jeito, da sua risada ou dos seus detalhes,
+            mas porque você me faz bem. Você deixa meus dias mais leves, meus pensamentos
+            mais felizes e meu coração ardendo. Desde que você chegou, tudo ganhou mais cor e mais sentido.
+        </p>
+
+        <p>
+            E quando eu penso em você, eu não penso só no presente. Eu penso em tudo o que
+            ainda quero viver ao seu lado. Penso em poder cuidar de você, te fazer sorrir
+            nos dias difíceis, te mimar quando você menos esperar e estar presente nas coisas
+            importantes da sua vida. Penso em construir lembranças, colecionar momentos e
+            continuar conhecendo cada detalhe seu.
+        </p>
+
+        <p>
+            Esse texto é uma espécie de pré-pedido, uma forma de te fazer entender meus objetivos com você.
+            Um jeito de te mostrar que eu não estou aqui só pelo agora. 
+            Que quando eu olho para você, eu vejo alguém que eu quero na minha vida,
+            alguém com quem eu quero continuar construindo coisas bonitas.
+        </p>
+
+        </p>
+            Eu gosto de imaginar o dia em que finalmente vou poder te pedir em namoro pessoalmente.
+            O dia em que vou olhar nos seus olhos, segurar sua mão e te entregar alianças com os nossos nomes. 
+            Só de pensar nisso, fico feliz, porque é um momento que quero muito viver com você.
+        </p>
+
+        <p>
+            Porque, no fim das contas, entre todas as coisas boas que aconteceram nos últimos
+            meses, encontrar você foi a minha favorita.
+        </p>
+
+        <p>
+            E por isso eu queria te fazer uma pergunta...
+        </p>
+
+        <div class="pergunta">Darla, você aceita namorar comigo? 🧡</div>
+
+        <div class="botoes">
+            <button id="sim" onclick="mostrarResposta()">Sim 🧡</button>
+            <button id="nao" onmouseover="mudarPosicao()">Não</button>
+        </div>
+
+        <div id="resposta">
+            Prometo fazer tudo que estiver ao meu alcance para te fazer feliz,
+            cuidar de você e construir momentos incríveis ao seu lado. 🧡
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h1>Essa música me lembra você</h1>
+
+        <iframe
+            src="https://www.youtube.com/embed/KkISwwTwy_g"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script>
+for(let i=0;i<40;i++){
+    const h=document.createElement('div');
+    h.className='heart-fall';
+    h.innerHTML='🧡';
+    h.style.left=Math.random()*100+'vw';
+    h.style.fontSize=(15+Math.random()*30)+'px';
+    h.style.animationDuration=(6+Math.random()*8)+'s';
+    h.style.animationDelay=(Math.random()*8)+'s';
+    document.getElementById('hearts').appendChild(h);
+}
+
+let player;
+
+function onYouTubeIframeAPIReady(){
+    player = new YT.Player('playerHidden',{
+        height:'0',
+        width:'0',
+        videoId:'KkISwwTwy_g',
+        playerVars:{
+            autoplay:0
+        }
+    });
+}
+
+function entrar(){
+    document.getElementById('entrada').style.display='none';
+
+    if(player){
+        player.playVideo();
+    }
+}
+
+function mostrarResposta(){
+    document.getElementById('resposta').style.display='block';
+}
+
+function mudarPosicao(){
+    const botao = document.getElementById('nao');
+
+    botao.style.position = 'fixed';
+
+    const largura = botao.offsetWidth;
+    const altura = botao.offsetHeight;
+
+    const x = Math.random() * (window.innerWidth - largura - 20);
+    const y = Math.random() * (window.innerHeight - altura - 20);
+
+    botao.style.left = x + 'px';
+    botao.style.top = y + 'px';
+}
+</script>
+
+</body>
+</html>
